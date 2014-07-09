@@ -2,7 +2,7 @@ var threeItems = [1,2,3];
 //create a function named 'last' that returns the last object from 'threeItems'
 //alert the result of your function
 
-var last = function()
+  //code here
 
 
 

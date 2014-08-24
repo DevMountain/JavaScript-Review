@@ -35,7 +35,7 @@ var songs =
 
 
 //Above you have a large Array of Song Objects. 
-//Write a 'getter' function that returns teh songs array.
+//Write a 'getter' function that returns the songs array.
 
   //code here
 

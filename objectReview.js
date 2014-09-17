@@ -16,6 +16,10 @@
 
 
 
+/* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
+
+
+
 var user = {
     name: 'Tyler McGinnis', 
     email: null,
@@ -39,6 +43,8 @@ var user = {
 
 
 
+/* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
+
 
 
 //create an empty object called methodCollection. 
@@ -52,3 +58,15 @@ var user = {
 //Now call your alertHello and logHello methods. 
 
   //Your code here
+
+
+
+/* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
+
+
+
+//write a function called voweler that accepts a string, and returns an object with the keys being all the vowels in that string, and the values being how many times that particular vowel was in the string.
+//voweler("This is a test") --> {i: 2, a: 1, e: 1};
+
+
+

@@ -9,10 +9,22 @@ first(names, function(firstName){
 
 
 
+
+/* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
+
+
+
+
 var names = ['Tyler', 'Cahlan', 'Ryan', 'Colt', 'Tyler', 'Blaine', 'Cahlan'];
 last(names, function(lastName){
   console.log('The last name in names is ', lastName);
 });
+
+
+
+
+/* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
+
 
 
 
@@ -27,11 +39,23 @@ contains('Colt', function(yes){
 
 
 
+
+/* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
+
+
+
+
 var numbers = [1,2,3,4,5];
 //Produces a new array of values by mapping each value in list through a transformation function
 map(, function(num){
   return num * 2; //returns an array of [2,4,6,8,10]
 });
+
+
+
+
+/* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
+
 
 
 
@@ -42,10 +66,22 @@ uniq(names, function(uniqArr){
 
 
 
+
+/* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
+
+
+
+
 var names = ['Tyler', 'Cahlan', 'Ryan', 'Colt', 'Tyler', 'Blaine', 'Cahlan'];
 each(names, function(item, indice){
   console.log('The item in the ' + indice + 'position is ' + item)
 });
+
+
+
+
+/* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
+
 
 
 
@@ -72,6 +108,12 @@ var users = [
 getUserById('16t', function(user){
   console.log('The user with the id 16t has the email of ' + user.email + 'the name of ' + user.name + ' and the address of ' + user.address); 
 });
+
+
+
+
+/* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
+
 
 
 

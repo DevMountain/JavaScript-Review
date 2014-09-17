@@ -5,6 +5,8 @@ var threeItems = [1,2,3];
   //code here
 
 
+/* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
+
 
 //Fix 'dicedArray' below so that it's an array full of integers from 0-10
 var dicedArray = [0,1,4,5,7,8,10];
@@ -12,11 +14,17 @@ var dicedArray = [0,1,4,5,7,8,10];
   //code here
 
 
+/* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
+
+
 
 //Loop through evenArray removing all values that aren't even 
 var evenArray = [1,2,3,6,22,98,45,23,22,12];
 
   //code here
+
+
+/* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
 
 
 
@@ -29,6 +37,9 @@ var randomArray = [0,3,4,5,6,7,9,14,17,24,25,26,29,30];
   //code here
 
 
+/* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
+
+
 
 //Create a copy of first and save it into second. Then, add 6 and 7 to the end of second. When you run this, first should be just [1,2,3,4,5] and second will be [1,2,3,4,5,6,7] if you created your copy correctly.
 var first = [1,2,3,4,5];
@@ -38,3 +49,34 @@ var second;
 
 alert(first) //[1,2,3,4,5];
 alert(second) //[1,2,3,4,5,6,7];
+
+
+
+/* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
+
+
+
+//write a function called longest that takes in our sentence variable, and returns the longest word in that sentence.
+var sentence = "Dev Mountain is the best"
+
+  //code here
+
+
+/* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
+
+
+
+//write a function called capitalize that takes in the myPoem variable and capitalizes every word 
+var myPoem = 'What is a jQuery but a misunderstood object?'
+//What is a jQuery but a misunderstood object? --> What Is A JQuery But A Misunderstood Object?
+
+  //code here
+
+
+
+/* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
+
+
+
+var theOdyssey = "function expression or function declaration? Tis an obvious choice";
+//Write a function called vowelCounter that takes in a string (theOdyssey) and returns how many vowels are in that string.

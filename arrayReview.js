@@ -1,5 +1,5 @@
 var threeItems = [1,2,3];
-//create a function named 'last' that returns the last object from 'threeItems'
+//create a function named 'last' that returns the last item from 'threeItems'
 //alert the result of your function
 
   //code here
@@ -14,7 +14,6 @@ var dicedArray = [0,1,4,5,7,8,10];
 
 
 //Loop through evenArray removing all values that aren't even 
-//hint x % 2 --> checks for even numbers
 var evenArray = [1,2,3,6,22,98,45,23,22,12];
 
   //code here

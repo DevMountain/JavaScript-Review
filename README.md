@@ -6,3 +6,4 @@ JavaScript-Review
 3. callbackReview.js
 4. closureReview.js
 5. constructorReview.js
+6. toy-problems.js

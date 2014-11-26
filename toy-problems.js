@@ -8,7 +8,13 @@ plusOneSum([1, 2, 3, 4]); // 14
 
 */
 
-
+var plusOneSum = function(arr){
+  var count = 0;
+  for(var i = 0; i < arr.length; i++){
+    count += arr[i] + 1;
+  }
+  return count;
+}
 
 /*
 
@@ -17,14 +23,45 @@ Write a function that accepts a multi dimensional array and returns a flattened 
 flatten([1, 2, [3, [4], 5, 6], 7]) // [1, 2, 3, 4, 5, 6, 7]
 
 */
-
-
+// newArr = [1, 2, 3, 4, 5, 6, 7]
+var flatten = function(arr, newArr){
+  var newArr = newArr || [];
+  for(var i = 0; i < arr.length; i++){
+    if(!Array.isArray(arr[i])){
+      newArr.push(arr[i]);
+    } else if(Array.isArray[arr[i]]){
+      flatten(arr[i], newArr);
+    }
+  }
+  return newArr;
+}
 
 /*
 
 Given an array [a1, a2, ..., aN, b1, b2, ..., bN, c1, c2, ..., cN] convert it to [a1, b1, c1, a2, b2, c2, ..., aN, bN, cN]
 
 */
+
+var order = function(arr){
+  var obj = {};
+  obj.length = 0;
+  for(var i = 0; i < arr.length; i++){
+    var index = arr[i].slice(1);
+    if(obj[index]){
+      obj[index].push(arr[i]);
+    } else {
+      obj[index] = [arr[i]];
+      obj.length++;
+    }
+  }
+
+  var newArr = [];
+  for(var i = 1; i < obj.length + 1;  i++){
+    newArr = newArr.concat(obj[i]);
+  }
+
+  return newArr;
+}
 
 
 /*
@@ -33,10 +70,22 @@ There is an array of non-negative integers. A second array is formed by shufflin
 
 */
 
+var find = function(arr1, arr2){
+  arr2 = arr2.sort(function(a,b){
+    return a-b;
+  });
+
+  for(var i = 0; i < arr1.length; i++){
+    if(arr1[i] !== arr2[i]){
+      return arr1[i];
+    }
+  }
+}
+
 
 /*
-
-Implement the getElementsByClassName(element, className) function in Javascript.
+//typo
+Implement the getElementsByClassName(className) function in Javascript.
 
 */
 
@@ -52,6 +101,25 @@ longestWords("I gave a present to my parents") // ["present", "parents"]
 longestWords("Buffalo buffalo Buffalo buffalo buffalo buffalo Buffalo buffalo") // ["buffalo"] or ["Buffalo"]
 
 */
+
+var longest = function(str){
+  var longestWords = [];
+  var length = 0;
+  var obj = {}
+  str = str.split(' ');
+  for(var i = 0; i < str.length; i++){
+    if(str[i].length > length && !obj[str[i].toLowerCase()]){
+      longestWords = [str[i]];
+      obj = {};
+      obj[str[i].toLowerCase()] = true;
+      length = str[i].length;
+    } else if(str[i].length === length && !obj[str[i].toLowerCase()]){
+      longestWords.push(str[i]);
+      obj[str[i].toLowerCase()] = true;
+    }
+  }
+  return longestWords;
+};
 
 
 /*

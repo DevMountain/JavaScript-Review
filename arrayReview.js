@@ -5,14 +5,6 @@ var threeItems = [1,2,3];
   //code here
 
 
-/* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
-
-
-//Fix 'dicedArray' below so that it's an array full of integers from 0-10
-var dicedArray = [0,1,4,5,7,8,10];
-
-  //code here
-
 
 /* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
 

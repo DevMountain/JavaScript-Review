@@ -34,11 +34,7 @@ There is an array of non-negative integers. A second array is formed by shufflin
 */
 
 
-/*
 
-Implement the getElementsByClassName(element, className) function in Javascript.
-
-*/
 
 
 /*

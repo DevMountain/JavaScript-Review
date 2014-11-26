@@ -20,7 +20,7 @@
 
 
 
-var user = {
+var user = {a
     name: 'Tyler McGinnis', 
     email: null,
     pwHash: 'U+Ldlngx2BYQk',
@@ -33,7 +33,7 @@ var user = {
 
   //Your code here
 
-//Once you get your truthy array, Change the remaining values in the array to be specific to you (name: 'your name', username: 'your username'), rather than my information.
+//Once you get your truthy object, Change the remaining values in the object to be specific to you (name: 'your name', username: 'your username'), rather than my information.
 
   //Your code here
 

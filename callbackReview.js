@@ -29,9 +29,9 @@ last(names, function(lastName){
 
 
 var names = ['Tyler', 'Cahlan', 'Ryan', 'Colt', 'Tyler', 'Blaine', 'Cahlan'];
-contains('Colt', function(yes){
-   if(yes){
-   console.log('Colt is in the array');
+contains('Colt', names, function(yes){
+  if(yes){
+    console.log('Colt is in the array');
   } else {
     console.log('Colt is not in the list');
   }
@@ -47,7 +47,7 @@ contains('Colt', function(yes){
 
 var numbers = [1,2,3,4,5];
 //Produces a new array of values by mapping each value in list through a transformation function
-map(, function(num){
+map(numbers, function(num){
   return num * 2; //returns an array of [2,4,6,8,10]
 });
 
@@ -105,7 +105,7 @@ var users = [
     address: '192 East 32 North'
   },
 ];
-getUserById('16t', function(user){
+getUserById('16t', users, function(user){
   console.log('The user with the id 16t has the email of ' + user.email + 'the name of ' + user.name + ' and the address of ' + user.address); 
 });
 

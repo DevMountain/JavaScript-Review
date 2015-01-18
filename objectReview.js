@@ -20,7 +20,7 @@
 
 
 
-var user = {a
+var user = {
     name: 'Tyler McGinnis', 
     email: null,
     pwHash: 'U+Ldlngx2BYQk',

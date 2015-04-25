@@ -39,13 +39,7 @@ contains('Colt', names, function(yes){
   }
 });
 
-
-
-
 /* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
-
-
-
 
 var numbers = [1,2,3,4,5];
 //Produces a new array of values by mapping each value in list through a transformation function
@@ -53,26 +47,29 @@ map(numbers, function(num){
   return num * 2; //returns an array of [2,4,6,8,10]
 });
 
-
-
-
 /* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
 
-
-
-
 var names = ['Tyler', 'Cahlan', 'Ryan', 'Colt', 'Tyler', 'Blaine', 'Cahlan'];
+
+function uniq(arr, cb){
+  
+  var uniqArr = [];
+  var uniqObj = {};
+  
+  for (var i = 0; i < arr.length; i++) {
+    uniqObj[arr[i]] = null;
+  };
+  for (var key in uniqObj) {
+    uniqArr.push(key)
+  }
+  cb(uniqArr);
+}
+
 uniq(names, function(uniqArr){
   console.log('The new names array with all the duplicate items removed is ', uniqArr);
 });
 
-
-
-
 /* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
-
-
-
 
 var names = ['Tyler', 'Cahlan', 'Ryan', 'Colt', 'Tyler', 'Blaine', 'Cahlan'];
 each(names, function(item, indice){

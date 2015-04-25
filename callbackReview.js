@@ -11,15 +11,19 @@ function sayFirst(){
 }
 
 first(names, sayFirst)
-/* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
 
+/* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
 var names = ['Tyler', 'Cahlan', 'Ryan', 'Colt', 'Tyler', 'Blaine', 'Cahlan'];
+
+function last(arr, cb){
+  var lastName = arr[arr.length - 1]
+  return cb(lastName)
+}
+
+
 last(names, function(lastName){
   console.log('The last name in names is ', lastName);
 });
-
-
-
 
 /* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
 

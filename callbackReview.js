@@ -25,19 +25,28 @@ last(names, function(lastName){
   console.log('The last name in names is ', lastName);
 });
 
-/* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
-
 //have the contains function return a boolean value for if the name is in the array or not.
 
 
-// var names = ['Tyler', 'Cahlan', 'Ryan', 'Colt', 'Tyler', 'Blaine', 'Cahlan'];
-// contains('Colt', names, function(yes){
-//   if(yes){
-//     console.log('Colt is in the array');
-//   } else {
-//     console.log('Colt is not in the list');
-//   }
-// });
+var names = ['Tyler', 'Cahlan', 'Ryan', 'Colt', 'Tyler', 'Blaine', 'Cahlan'];
+
+function contains(str, arr, cb) {
+  var yes = null;
+  for (var i = 0; i < arr.length; i++) {
+    if (arr[i] === str){
+      var yes = true;
+    }
+  }
+  cb(yes)
+}
+
+contains('Colt', names, function(yes){
+  if(yes){
+    console.log('colt is in the array');
+  } else {
+    console.log('Colt is not in the list');
+  }
+});
 
 /* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
 
@@ -71,10 +80,19 @@ uniq(names, function(uniqArr){
 
 /* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
 
-// var names = ['Tyler', 'Cahlan', 'Ryan', 'Colt', 'Tyler', 'Blaine', 'Cahlan'];
-// each(names, function(item, indice){
-//   console.log('The item in the ' + indice + 'position is ' + item)
-// });
+var names = ['Tyler', 'Cahlan', 'Ryan', 'Colt', 'Tyler', 'Blaine', 'Cahlan'];
+
+function each(arr, cb){
+  for (var i = 0; i < arr.length; i++) {
+    var indice = i;
+    var item = arr[i];
+  };
+  cb(item, indice);
+}
+
+each(names, function(item, indice){
+  console.log('The item in the ' + indice + ' position is ' + item)
+});
 
 /* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
 
@@ -112,9 +130,6 @@ function getUserById(str, arr, cb){
 getUserById('16t', users, function(user){
   console.log('The user with the id 16t has the email of ' + user.email + 'the name of ' + user.name + ' and the address of ' + user.address); 
 });
-
-
-
 
 /* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
 

@@ -52,11 +52,13 @@ second.push(6, 7)
 
 
 // //write a function called capitalize that takes in the myPoem variable and capitalizes every word 
-// var myPoem = 'What is a jQuery but a misunderstood object?'
+var myPoem = 'What is a jQuery but a misunderstood object?'
 // //What is a jQuery but a misunderstood object? --> What Is A JQuery But A Misunderstood Object?
-function capitalize(){
-	
+function capitalize(str){
+	 return str.toUpperCase();
 }
+
+console.log(capitalize(myPoem))
 
 
 

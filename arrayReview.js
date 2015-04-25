@@ -41,14 +41,10 @@ var second = [];
 
 var second = first;
 second.push(6, 7)
-// /* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
-
-
-
 // //write a function called longest that takes in our sentence variable, and returns the longest word in that sentence.
 // var sentence = "Dev Mountain is the best"
 
-//   //code here
+
 
 
 // /* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
@@ -58,8 +54,9 @@ second.push(6, 7)
 // //write a function called capitalize that takes in the myPoem variable and capitalizes every word 
 // var myPoem = 'What is a jQuery but a misunderstood object?'
 // //What is a jQuery but a misunderstood object? --> What Is A JQuery But A Misunderstood Object?
-
-//   //code here
+function capitalize(){
+	
+}
 
 
 

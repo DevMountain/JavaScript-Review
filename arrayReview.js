@@ -66,7 +66,7 @@ console.log(findLonges(myPoem))
 function capitalize(str){
 	 return str.toUpperCase();
 }
-
+consol.log('test')
 console.log(capitalize(myPoem))
 
 var theOdyssey = "function expression or function declaration? Tis an obvious choice";

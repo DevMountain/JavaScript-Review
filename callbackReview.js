@@ -1,19 +1,17 @@
 /* Declare and Define the functions here that will make the function calls below work properly */
-
-
-
 var names = ['Tyler', 'Cahlan', 'Ryan', 'Colt', 'Tyler', 'Blaine', 'Cahlan'];
-first(names, function(firstName){
+
+function first(arr, cb){
+  firstName = arr[0];
+  return cb(firstName);  
+};
+
+function sayFirst(){
   console.log('The first name in names is ', firstName)
-});
+}
 
-
-
-
+first(names, sayFirst)
 /* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
-
-
-
 
 var names = ['Tyler', 'Cahlan', 'Ryan', 'Colt', 'Tyler', 'Blaine', 'Cahlan'];
 last(names, function(lastName){

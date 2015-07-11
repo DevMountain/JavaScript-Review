@@ -1,5 +1,7 @@
 /* Declare and Define the functions here that will make the function calls below work properly */
-
+function first(names, getFirstName) {
+  getFirstName(names[0]);
+}
 
 
 var names = ['Tyler', 'Cahlan', 'Ryan', 'Colt', 'Tyler', 'Blaine', 'Cahlan'];
@@ -11,7 +13,9 @@ first(names, function(firstName){
 
 
 /* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
-
+function last(names, getLastName) {
+  getLastName(names[names.length - 1]);
+}
 
 
 
@@ -26,6 +30,14 @@ last(names, function(lastName){
 /* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
 
 //have the contains function return a boolean value for if the name is in the array or not.
+function contains(name, names, find) {
+  var found = false;
+  if (names.indexOf(name) !== -1) {
+    found = true;
+  }
+  find(found);
+  return found;
+}
 
 
 var names = ['Tyler', 'Cahlan', 'Ryan', 'Colt', 'Tyler', 'Blaine', 'Cahlan'];
@@ -41,7 +53,13 @@ contains('Colt', names, function(yes){
 
 
 /* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
-
+function map(numbers, modify) {
+  var doubleNumbers = numbers.slice(0, numbers.length);
+  for (var i = 0; i < doubleNumbers.length; i++) {
+    doubleNumbers[i] = modify(doubleNumbers[i]);
+  };
+  return doubleNumbers;
+}
 
 
 
@@ -55,7 +73,17 @@ map(numbers, function(num){
 
 
 /* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
-
+function uniq(names, message) {
+  var uniqArr = names.slice(0, names.length);
+  for (var i = 0; i < uniqArr.length; i++) {
+    if (uniqArr.indexOf(uniqArr[i]) !== i) {
+      uniqArr.splice(i, 1);
+      i--;
+    }
+  };
+  message(uniqArr);
+  return uniqArr;
+}
 
 
 
@@ -68,7 +96,11 @@ uniq(names, function(uniqArr){
 
 
 /* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
-
+function each(names, message) {
+  for (var i = 0; i < names.length; i++) {
+    message(names[i], i);
+  };
+}
 
 
 
@@ -81,7 +113,16 @@ each(names, function(item, indice){
 
 
 /* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
-
+function getUserById(userId, users, message) {
+  var user;
+  for (var i = 0; i < users.length; i++) {
+    if (users[i]["id"] = userId) {
+      user = users[i];
+      break;
+    }
+  }
+  message(user);
+}
 
 
 
@@ -113,7 +154,13 @@ getUserById('16t', users, function(user){
 
 
 /* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
-
+function find(arr, test) {
+  for (var i = 0; i < arr.length; i++) {
+    if (test(arr[i])) {
+      return arr[i];
+    }
+  };
+}
 
 
 

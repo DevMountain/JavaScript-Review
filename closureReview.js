@@ -28,11 +28,24 @@ function oneTimeOnly(funct) {
 	var once = false;
 	return function(){
 		if (!once) {
-			funct();
 			once = true;
+			funct();
 		}
 	}
 }
 
+function nTimesOnly(funct, n) {
+	var nTimes = false;
+	var counter = 0;
+	return function() {
+		if (!nTimes) {
+			counter++;
+			if (counter === n) {
+				nTimes = true;
+			}
+			funct();
+		}
+	}
+}
 
 

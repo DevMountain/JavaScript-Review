@@ -1,4 +1,4 @@
-//Create a Animal Constructor that has the following parameters. species, name, legs, color, food (which is an array of foods they can eat).
+//Create an Animal Constructor that has the following parameters. species, name, legs, color, food (which is an array of foods they can eat).
 
   //code here
 
@@ -8,7 +8,7 @@
   //code here
 
 
-//Create a animal array and a person array.
+//Create an animal array and a person array.
 
   //code here
 

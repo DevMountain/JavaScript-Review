@@ -1,4 +1,4 @@
-//Create a Animal Constructor that has the following parameters. species, name, legs, color, food (which is an array of foods they can eat).
+//Create an Animal Constructor that has the following parameters. species, name, legs, color, food (which is an array of foods they can eat).
 
   //code here
 
@@ -24,7 +24,7 @@ function createPerson(name, age, height, gender) {
   return person;
 }
 
-//Create a animal array and a person array.
+//Create an animal array and a person array.
 
   //code here
 var animal = [];
@@ -63,5 +63,11 @@ Animal.prototype.eat = function() {
   3) Can a normal function which creates an object and then returns that object use the prototype?
   //No
   4) What happens if you forget to use 'new' when calling a constructor?
+<<<<<<< HEAD
   //It would not actually call the constructor.
 */
+||||||| merged common ancestors
+*/
+=======
+*/
+>>>>>>> refs/remotes/origin/master
